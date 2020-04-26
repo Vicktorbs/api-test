@@ -5,15 +5,17 @@ const { Schema } = mongoose;
 // Definir nuevo esquema de la base de datos para modelar los datos de los empleados
 const User = new Schema({
     name: String,
-    surname: String,
-    expediente: Number,
+    surname: String,//Apellido
+    expediente: Number,// numero de expediente
     password: String,
-    categoria: String,
+    categoria: String,//el trabajador es de base o confianza
     turno: String,
     fechaRegistro: String,
     //inicioSesion: {type: Date, default: Date.now()},
-    role:String,
+    role:String,//Role_user
     image: String
+}, {
+    timestamps: true
 });
 
 // Pasando a modelo de datos de mongoose
