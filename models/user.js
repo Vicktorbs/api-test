@@ -19,4 +19,4 @@ const User = new Schema({
 });
 
 // Pasando a modelo de datos de mongoose
-module.exports = mongoose.model('UserModel', User);
+module.exports = mongoose.model('User', User);

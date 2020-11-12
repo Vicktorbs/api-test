@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 //Ubicacion de la base de datos
-const URI = 'mongodb://localhost/tl-forms'
+const URI = 'mongodb://localhost/trenligero'
 
 // Conexion a la base de datos 
 mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true })
