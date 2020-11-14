@@ -59,7 +59,7 @@ function saveUser(req, res){
 //Login
 function loginUser(req, res){
     var params = req.body;//recoge los parametros que lleguen por post
-
+    console.log(req.body);
     var expediente = params.expediente;
     var password = params.password;
 

@@ -128,7 +128,7 @@ MEME_B03.getStateCheckedApprovalByWorker = async (req, res) => {
 MEME_B03.getAllMaintenenceMEME_B03 = async (req, res) => {
     const maintenances = await memeB03.find({}, {
         "_id": 1, 
-        "unidad": 1, 
+        "noTren": 1, 
         "documentFormCurrentState.approvalByWorker.checked": 1, 
         "documentFormCurrentState.approvalBySupervisor.checked": 1,
         "documentFormCurrentState.approvalByMannager.checked": 1,

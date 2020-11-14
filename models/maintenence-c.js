@@ -9,6 +9,7 @@ var memeC01Schema = Schema({//esquema de la estructura que van a tener los formu
     kilometraje: { type: String },
     horaInicio: { type: String },
     horaTerminacion: { type: String },
+    clave: Number,
     
     user: { type: String, required: true},
     id_worker: {type: String, required: true},
@@ -83,45 +84,53 @@ var memeC01Schema = Schema({//esquema de la estructura que van a tener los formu
     revisionTM1: Boolean,
     sopleteadoTM1: Boolean,
     limpiezaTM1: Boolean,
+    lubricacionTM1: Boolean,
     
     revisionTM2: Boolean,
     sopleteado: Boolean,
     limpiezaTM2: Boolean,
+    lubricacionTM2: Boolean,
     
     revisionToM1: Boolean,
     sopleteadoToM1: Boolean,
     limpiezaToM1: Boolean,
+    lubricacionToM1: Boolean,
     
     revisionToM2: Boolean,
     sopleteadoToM2: Boolean,
     limpiezaToM2: Boolean,
+    lubricacionToM2: Boolean,
     
     revisionRM1: Boolean,
     sopleteadoRM1: Boolean,
     limpiezaRM1: Boolean,
+    lubricacionRM1: Boolean,
     
     revisionRM2: Boolean,
     sopleteadoRM2: Boolean,
     limpiezaRM2: Boolean,
+    lubricacionRM2: Boolean,
     
     revisionBM1: Boolean,
     sopleteadoBM1: Boolean,
     limpiezaBM1: Boolean,
+    lubricacionBM1: Boolean,
     
     revisionBM2: Boolean,
     sopleteadoBM2: Boolean,
     limpiezaBM2: Boolean,
+    lubricacionBM2: Boolean,
     
     observaciones: String,
     //MATERIAL UTILIZADO
     materialUtilizado: {
         numberOfMaterial: Number,    
         arr: [{
-            _id: String,
             code: String,
             description: String,
             voucherNumber: String,
             quantity: String,
+            unit: String
         }]
     },
 
